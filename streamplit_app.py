@@ -54,8 +54,8 @@ def get_fruityvice_data(this_fruit_choice):
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     return fruityvice_normalized
 streamlit.header ("The fruit load list contains:")
-    def get_fruit_load_list():
-       with my_cnx.cursor() as my_cur:
+def get_fruit_load_list():
+     with my_cnx.cursor() as my_cur:
        my cur.execute("select * from fruit_load_list")
        return my_cur. fetchall()
 if streamlit.button('Get Fruit Load List'):
