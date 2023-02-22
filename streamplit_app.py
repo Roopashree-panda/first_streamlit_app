@@ -78,3 +78,4 @@ if streamlit. button( 'Get Fruit List'):
   my_data_rows =get_fruit_load_list()
   my_cnx.close()
   streamlit.dataframe (my_data_rows)
+streamlit.title('View our fruit list-Add your favourites')
